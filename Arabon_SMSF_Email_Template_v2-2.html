@@ -47,23 +47,24 @@
         }
 
         .feature {
-            width: 26.33%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
             text-align: center;
             vertical-align: top;
-            padding-left: 24px;
-            padding-right: 24px;
-            border-right: 1px solid #E8E8E8;
+            margin-left: 16px;
+            margin-right: 16px;
+            border: 1px solid #E8E8E8;
         }
 
         .feature:first-child {
-            padding-right: 24px;
-            padding-left: 0;
+            margin-right: 0;
+            margin-left: 0;
         }
 
         .feature:last-child {
-            border: none;
-            padding-right: 0;
-            padding-left: 24px;
+            margin-right: 0;
+            margin-left: 0;
         }
 
         .check-row td {
@@ -79,7 +80,22 @@
             padding-bottom: 0;
         }
 
+        .hero-copy {
+            width: 41%;
+            vertical-align: middle;
+        }
+
+        .hero-art {
+            width: 100%;
+            text-align: right;
+        }
+
         @media(max-width:425px) {
+
+            .hero-main {
+                padding: 20px !important;
+            }
+
             .feature {
                 display: block;
                 width: 100% !important;
@@ -89,10 +105,6 @@
                 padding-right: 0;
                 border-right: none;
                 border-bottom: 1px solid #E8E8E8;
-            }
-
-            .container-main-td.content {
-                padding-top: 0 !important;
             }
 
             .feature:first-child {
@@ -149,68 +161,88 @@
             .desc-margin {
                 margin: 0 !important;
             }
+
+            .hero-copy,
+            .hero-art {
+                display: block !important;
+                width: 100% !important;
+                text-align: left !important;
+                padding: 0 !important;
+            }
+
+            .hero-art {
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
         }
     </style>
 </head>
 
-<body>
-    <table width="100%" bgcolor="#eef1f6">
+<body style="overflow-x: hidden;">
+    <table width="100%" bgcolor="#eef1f6" style="position: relative;">
         <tr>
             <td align="center" style="padding:0">
-                <table class="container" width="100%">
+                <table class="container" width="100%;" style="overflow: hidden;">
 
-                    <!-- HEADER: centered logo -->
+                    <!-- HERO BANNER: logo + headline/subtitle + illustration on light blue background -->
                     <tr>
-                        <td align="center" style="padding:20px 20px; border:none;border-bottom:1px solid #E8E8E8">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
-                                width="118" alt="Arabon Accountants">
-                        </td>
-                    </tr>
-
-                    <!-- HEADLINE / SUBTITLE (centered) -->
-                    <tr>
-                        <td class="container-main-td" align="center" style="padding:32px 32px 12px">
-                            <h1
-                                style="color:#002D72;font-size:24px;line-height:31px;margin:0;text-align:center; font-weight: bold;">
-                                Where most SMSF property purchases actually go wrong
-                            </h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" class="td-padding" style="padding:0 32px 30px">
-                            <p
-                                style="font-size:14px;line-height:21px;color:#6B6C6F;margin:0;text-align:center; font-weight: 400;">
-                                It's rarely the property that causes problems. It's what happens before it.
-                            </p>
-                        </td>
-                    </tr>
-
-                    <!-- HERO IMAGE (placeholder - replace src with your hosted photo) -->
-                    <tr>
-                        <td class="td-padding" style="padding:0 32px 30px">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_2-main.jpg"
-                                width="100%" style="display:block;" alt="Arabon team meeting">
+                        <td class="hero-main" style="background:#F1FBFF;padding:32px 0 32px 32px; position: relative;">
+                            <div class="liner-circle"
+                                style="position: absolute; top: -40px; right: -56px; width: 111.81px; height: 111.81px; z-index: 999;">
+                                <img src="images/icn_email_template_1_Ellipse.png" width="118" alt="Arabon Accountants">
+                            </div>
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <table width="100%">
+                                            <tr>
+                                                <td class="hero-copy">
+                                                    <img src="images/img_aba_emial_t_icon.png" width="118"
+                                                        alt="Arabon Accountants">
+                                                    <h1
+                                                        style="color:#002D72;font-size:22px;line-height:29px;margin:24px 0 12px;font-weight:bold">
+                                                        Where most SMSF property purchases actually go wrong
+                                                    </h1>
+                                                    <p
+                                                        style="font-size:12px;line-height:18px;color:#202020;margin:0;font-weight:400">
+                                                        It's rarely the property that causes problems. It's what happens
+                                                        before it.
+                                                    </p>
+                                                </td>
+                                                <td class="hero-art" style="vertical-align: bottom;">
+                                                    <!-- Illustration placeholder — replace src with your hosted illustration graphic -->
+                                                    <img src="images/img_ab_account_email_2_illution.png" width="100%"
+                                                        style="max-width:287px;display:inline-block"
+                                                        alt="SMSF property illustration">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
                     <!-- BODY -->
                     <tr>
-                        <td class="container-main-td content" style="padding:0 32px">
+                        <td class="container-main-td" style="padding:32px 32px 0">
 
                             <p style="font-size:14px;line-height:21px;color:#202020;margin:0 0 12px; font-weight: 400;">
-                                Hi</p>
+                                Hi <strong style="color: #002D72;">[First Name]</strong>,</p>
 
-                            <p style="font-size:14px;line-height:21px;color: #202020;;margin:0 0 12px">
+                            <p
+                                style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 12px">
                                 Most SMSF property purchases that go wrong don't fail because of the property. They fail
                                 because of what wasn't in place before the offer was made.
                             </p>
 
-                            <p style="font-size:14px;line-height:21px;color: #202020;;margin:0 0 12px">
+                            <p
+                                style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 12px">
                                 Here's the part that catches people out.
                             </p>
 
                             <p class="desc-margin"
-                                style="font-size:14px;line-height:21px; font-weight: bold; color: #002D72;;margin:0 0 32px">
+                                style="font-size:14px;line-height:21px; font-weight: bold; color:#002D72;margin:0 0 32px">
                                 Borrowing through super doesn't work like a normal mortgage
                             </p>
 
@@ -219,12 +251,12 @@
 
                     <!-- "IN THE NEXT FIVE MINUTES" callout box -->
                     <tr>
-                        <td class="td-padding top" style="background:#F1FBFF; padding: 32px;">
+                        <td class="td-padding top" style="background:#F1FBFF; padding: 32px 32px 32px;">
                             <table width="100%">
                                 <tr>
                                     <td style="padding:0 0 20px">
                                         <h2
-                                            style="color:#002D72;font-size:18px; line-height: 27px; font-size: 600; margin:0 0 20px">
+                                            style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 20px">
                                             Your SMSF can't just take out a loan. The one route available is a Limited
                                             Recourse Borrowing
                                             Arrangement, or LRBA:</h2>
@@ -292,6 +324,14 @@
                         </td>
                     </tr>
 
+                    <!-- HERO IMAGE (meeting photo) -->
+                    <tr>
+                        <td class="td-padding" style="padding:32px 32px 0">
+                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_2-main.jpg"
+                                width="100%" style="display:block;" alt="Arabon team meeting">
+                        </td>
+                    </tr>
+
                     <!-- WHY THIS GUIDE IS DIFFERENT -->
                     <tr>
                         <td class="container-main-td" style="padding:32px 32px 24px">
@@ -310,21 +350,21 @@
                         </td>
                     </tr>
 
+                    <!-- WHY THIS GUIDE IS DIFFERENT -->
                     <tr>
-                        <td class="td-padding" style="padding:0 32px 24px">
+                        <td class="container-main-td" style="padding:0 32px 24px">
                             <h2
                                 style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 10px">
                                 Why the finance side is where things stall</h2>
                             <p style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;margin:0">
                                 SMSF lending is a specialist category. Fewer lenders offer it, the criteria are tighter,
                                 and the
-                                loan has to be structured to match the LRBA exactly from day one. This is where <span
-                                    style="font-weight: 600; color:#002D72;">
-                                    Write
-                                    Finance </span> earns their place in this process. They work directly with Arabon,
-                                so the fund
-                                structure
-                                and the loan are built together, not patched together after something doesn't line up.
+                                loan has to be structured to match the LRBA exactly from day one. This is where <strong
+                                    style="color: #002D72;">Write
+                                    Finance </strong>
+                                earns their place in this process. They work directly with Arabon, so the fund structure
+                                and the
+                                loan are built together, not patched together after something doesn't line up.
                             </p>
                         </td>
                     </tr>
@@ -333,8 +373,8 @@
                         <td class="td-padding" style="padding:0 32px 30px">
                             <p
                                 style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 20px">
-                                And because this decision affects more than just one asset, <span
-                                    style="font-weight: 600; color:#002D72;"> Panoptic Wealth Management </span>
+                                And because this decision affects more than just one asset, <strong
+                                    style="color: #002D72;"> Panoptic Wealth Management </strong>
                                 looks at how the purchase sits inside your broader financial plan before you commit to
                                 anything.
                             </p>
@@ -342,9 +382,8 @@
                             <p style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0">Speak
                                 soon,
                             </p>
-                            <p
-                                style="font-size:14px;line-height:21px;font-weight: 600;color: #002D72;margin:0;text-transform: uppercase;">
-                                Arabon
+                            <p style="font-size:14px;line-height:21px;font-weight: 600;color: #002D72;margin:0;">
+                                Arabon Accountants
                             </p>
                         </td>
                     </tr>
@@ -355,13 +394,12 @@
                             <table width="100%">
                                 <tr>
                                     <td class="footer-td-2" style="vertical-align:middle; padding: 0;">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo.png"
-                                            width="138" alt="Arabon Accountants">
+                                        <img src="images/img_footer_logo.png" width="138" alt="Arabon Accountants">
                                     </td>
                                     <td class="footer-td footer-align-right" align="right"
                                         style="vertical-align:middle;padding: 0;">
                                         <a class="btn"
-                                            href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/SMSF.pdf">
+                                            href="https://bookings.cloud.microsoft/book/ArabonAccountants1@arabon.com.au/?ismsaljsauthenabled">
                                             Book an Appointment
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
                                                 alt="Button Icon" width="14px"
@@ -380,16 +418,15 @@
                                         <table>
                                             <tr>
                                                 <td style="padding:0 14px 0 0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-1.png"
-                                                        width="36" alt="Registered Tax Agent">
+                                                    <img src="images/img_footer_logo-1.png" width="36"
+                                                        alt="Registered Tax Agent">
                                                 </td>
                                                 <td style="padding:0 14px 0 0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-2.png"
-                                                        width="36" alt="Xero">
+                                                    <img src="images/img_footer_logo-2.png" width="36" alt="Xero">
                                                 </td>
                                                 <td style="padding:0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-3.png"
-                                                        width="29" height="36" alt="Platinum Champion Partner">
+                                                    <img src="images/img_footer_logo-3.png" width="29" height="36"
+                                                        alt="Platinum Champion Partner">
                                                 </td>
                                             </tr>
                                         </table>
@@ -397,7 +434,7 @@
                                             style="font-size:10px; line-height: 15px; font-weight: 400; color:#ffffff;margin:12px 0 41px">
                                             Registered Tax Agent (25620662)</p>
 
-                                        <!-- Social icons (inline SVG, no external assets needed) -->
+                                        <!-- Social icons -->
                                         <table>
                                             <tr>
                                                 <td style="padding:0 22px 0 0">
@@ -445,14 +482,14 @@
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0 0 16px">
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_location.png"
-                                                alt="SMS" width="16"
+                                                alt="Location" width="16"
                                                 style="margin-right: 8px; vertical-align: middle; display: inline-block;">
                                             Level 1, 655 Sherwood Road, Sherwood QLD 4075
                                         </p>
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color: #FFFFFF; margin:0">
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_location.png"
-                                                alt="SMS" width="16"
+                                                alt="Location" width="16"
                                                 style="margin-right: 8px; vertical-align: middle; display: inline-block;">
                                             14/5 Markeri St, Mermaid Beach QLD 4218
                                         </p>

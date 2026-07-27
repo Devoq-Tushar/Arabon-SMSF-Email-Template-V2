@@ -47,24 +47,23 @@
         }
 
         .feature {
-            width: 26.33%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
             text-align: center;
             vertical-align: top;
-            padding-left: 24px;
-            padding-right: 24px;
-            border-right: 1px solid #E8E8E8;
+            border: 1px solid #E8E8E8;
         }
 
-        .feature:first-child {
-            padding-right: 24px;
-            padding-left: 0;
+        .feature-1 .feature:first-child,
+        .feature-2 .feature:first-child {
+            margin-right: 16px;
         }
 
-        .feature:last-child {
-            border: none;
-            padding-right: 0;
-            padding-left: 24px;
+        .feature-2 {
+            margin-top: 16px;
         }
+
 
         .check-row td {
             padding: 6px 0;
@@ -79,47 +78,50 @@
             padding-bottom: 0;
         }
 
+        .hero-copy {
+            width: 41%;
+            vertical-align: middle;
+        }
+
+        .hero-art {
+            width: 100%;
+            text-align: right;
+        }
+
         @media(max-width:425px) {
-            .feature-table {
-                padding-top: 16px !important;
+
+            .hero-main {
+                padding: 20px !important;
             }
 
             .feature {
-                display: block;
-                width: 100% !important;
-                padding-top: 16px;
-                padding-bottom: 16px;
-                padding-left: 0;
-                padding-right: 0;
-                border-right: none;
-                border-bottom: 1px solid #E8E8E8;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                vertical-align: top;
+                border: 1px solid #E8E8E8;
             }
 
-            .feature:first-child {
-                padding-top: 0;
-                padding-bottom: 16px;
-                padding-right: 0;
-                padding-left: 0;
+            .feature-1 .feature:first-child,
+            .feature-2 .feature:first-child {
+                margin-right: 0;
+                margin-bottom: 12px;
             }
 
-            .feature:last-child {
-                border-bottom: 1px solid #E8E8E8;
-                padding-right: 0;
-                padding-left: 0;
-                padding-bottom: 16px;
-                padding-top: 16px;
+            .feature-1 {
+                display: inline-flex !important;
+                flex-direction: column !important;
             }
 
-            .feature.border-none {
-                border: none;
+            .feature-2 {
+                margin-top: 12px;
+                display: inline-flex !important;
+                flex-direction: column !important;
             }
 
             .container-main-td {
                 padding: 20px !important;
-            }
-
-            .container-main-td.top {
-                padding-top: 0 !important;
             }
 
             .td-padding {
@@ -157,58 +159,75 @@
             .desc-margin {
                 margin: 0 !important;
             }
+
+            .hero-copy,
+            .hero-art {
+                display: block !important;
+                width: 100% !important;
+                text-align: left !important;
+                padding: 0 !important;
+            }
+
+            .hero-art {
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
         }
     </style>
 </head>
 
-<body>
-    <table width="100%" bgcolor="#eef1f6">
+<body style="overflow-x: hidden;">
+    <table width="100%" bgcolor="#eef1f6" style="position: relative;">
         <tr>
             <td align="center" style="padding:0">
-                <table class="container" width="100%">
+                <table class="container" width="100%;" style="overflow: hidden;">
 
-                    <!-- HEADER: centered logo -->
+                    <!-- HERO BANNER: logo + headline/subtitle + illustration on light blue background -->
                     <tr>
-                        <td align="center" style="padding:20px 20px; border:none;border-bottom:1px solid #E8E8E8">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
-                                width="118" alt="Arabon Accountants">
-                        </td>
-                    </tr>
-
-                    <!-- HEADLINE / SUBTITLE (centered) -->
-                    <tr>
-                        <td class="container-main-td" align="center" style="padding:32px 32px 12px">
-                            <h1
-                                style="color:#002D72;font-size:24px;line-height:31px;margin:0;text-align:center; font-weight: bold;">
-                                Ready to move on SMSF property? Start here
-                            </h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" class="td-padding" style="padding:0 32px 30px">
-                            <p
-                                style="font-size:14px;line-height:21px;color:#6B6C6F;margin:0;text-align:center; font-weight: 400;">
-                                One call instead of four. Here's how it works
-                            </p>
-                        </td>
-                    </tr>
-
-                    <!-- HERO IMAGE (placeholder - replace src with your hosted photo) -->
-                    <tr>
-                        <td class="td-padding" style="padding:0 32px 30px">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_3-main.jpg"
-                                width="100%" style="display:block;" alt="Arabon team meeting">
+                        <td class="hero-main" style="background:#F1FBFF;padding:32px 0 32px 32px; position: relative;">
+                            <div class="liner-circle"
+                                style="position: absolute; top: -40px; right: -56px; width: 111.81px; height: 111.81px; z-index: 999;">
+                                <img src="images/icn_email_template_1_Ellipse.png" width="118" alt="Arabon Accountants">
+                            </div>
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <table width="100%">
+                                            <tr>
+                                                <td class="hero-copy">
+                                                    <img src="images/img_aba_emial_t_icon.png" width="118"
+                                                        alt="Arabon Accountants">
+                                                    <h1
+                                                        style="color:#002D72;font-size:22px;line-height:29px;margin:24px 0 12px;font-weight:bold">
+                                                        Ready to move on SMSF property? Start here
+                                                    </h1>
+                                                    <p
+                                                        style="font-size:12px;line-height:18px;color:#202020;margin:0;font-weight:400">
+                                                        One call instead of four. Here's how it works
+                                                    </p>
+                                                </td>
+                                                <td class="hero-art" style="vertical-align: bottom;">
+                                                    <!-- Illustration placeholder — replace src with your hosted illustration graphic -->
+                                                    <img src="images/img_ab_account_email_3_illution.png" width="100%"
+                                                        style="max-width:100%;display:inline-block"
+                                                        alt="SMSF property illustration">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
                     <!-- BODY -->
                     <tr>
-                        <td class="container-main-td top" style="padding:0 32px">
+                        <td class="container-main-td" style="padding:32px 32px 0">
 
                             <p style="font-size:14px;line-height:21px;color:#202020;margin:0 0 12px; font-weight: 400;">
-                                Hi</p>
+                                Hi <strong style="color: #002D72;">[First Name]</strong>,</p>
 
-                            <p style="font-size:14px;line-height:21px;color: #202020;;margin:0 0 12px">
+                            <p style="font-size:14px;line-height:21px;color: #202020;margin:0 0 12px">
                                 Over the last week, you've seen what's changed, what hasn't, and how the
                                 borrowing side
                                 actually works. If you're ready to move on this, here's what happens next.
@@ -230,45 +249,60 @@
                         </td>
                     </tr>
 
-                    <!-- PARTNER LOGOS ROW (placeholders - replace src with your hosted partner logos) -->
+                    <!-- HERO IMAGE (meeting photo) -->
                     <tr>
-                        <td class="td-padding" style="padding:0 32px 30px">
+                        <td class="td-padding" style="padding:32px 32px 0">
+                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_3-main.jpg"
+                                width="100%" style="display:block;" alt="Arabon team meeting">
+                        </td>
+                    </tr>
+
+                    <!-- PARTNER LOGOS ROW -->
+                    <tr>
+                        <td class="td-padding" style="padding:32px 32px 0">
                             <table width="100%">
-                                <tr>
+                                <tr class="feature-1" style="display: inline-flex;">
                                     <td class="feature">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
-                                            width="72" style="display:block;margin:0 auto 16px"
-                                            alt="Insight Property Specialist">
+                                        <span
+                                            style="height: 94px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                            <img src="images/img_aba_emial_t_icon.png" width="136"
+                                                style="display:block;" alt="Panoptic Wealth Management">
+                                        </span>
                                         <p
-                                            style="font-size:12px;line-height:16px; font-weight: 400; color:#202020;margin:0">
+                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
                                             handles the SMSF setup, accounting, and ongoing compliance</p>
                                     </td>
                                     <td class="feature">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_insight_icon.png"
-                                            width="110" style="display:block;margin:0 auto 16px"
-                                            alt="Insight Property Specialist">
+                                        <span
+                                            style="height: 94px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                            <img src="images/img_insight_icon.png" width="170" style="display:block;"
+                                                alt="Insight Property Specialist">
+                                        </span>
                                         <p
-                                            style="font-size:12px;line-height:16px; font-weight: 400; color:#202020;margin:0">
+                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
                                             sources the right investment property for your fund</p>
                                     </td>
                                 </tr>
-                            </table>
-                            <table class="feature-table" width="100%" style="display: inline-block; padding-top: 24px;">
-                                <tr>
+
+                                <tr class="feature-2" style="display: inline-flex;">
                                     <td class="feature">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_write_finance_icon.png"
-                                            width="68" style="display:block;margin:0 auto 16px"
-                                            alt="Insight Property Specialist">
+                                        <span
+                                            style="height: 94px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                            <img src="images/img_write_finance_icon.png" width="137"
+                                                style="display:block;" alt="Write Finance">
+                                        </span>
                                         <p
-                                            style="font-size:12px;line-height:16px; font-weight: 400; color:#202020;margin:0">
+                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
                                             arranges the SMSF lending, structured to match from day one</p>
                                     </td>
-                                    <td class="feature border-none">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_panoptic_icon.png"
-                                            width="115" style="display:block;margin:0 auto 16px"
-                                            alt="Insight Property Specialist">
+                                    <td class="feature">
+                                        <span
+                                            style="height: 94px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                            <img src="images/img_panoptic_icon.png" width="178" style="display:block;"
+                                                alt="Panoptic Wealth Management">
+                                        </span>
                                         <p
-                                            style="font-size:12px;line-height:16px; font-weight: 400; color:#202020;margin:0">
+                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
                                             makes sure it all fits your broader financial plan</p>
                                     </td>
                                 </tr>
@@ -278,19 +312,13 @@
 
                     <!-- WHY THIS GUIDE IS DIFFERENT -->
                     <tr>
-                        <td class="container-main-td top" style="padding:0 32px 20px">
-                            <p style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;margin:0">
+                        <td class="container-main-td" style="padding:32px 32px 20px">
+                            <p
+                                style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 20px">
                                 One call starts all four. You don't need to know which specialist to speak to first, or
                                 explain your
                                 situation four separate times.
                             </p>
-                        </td>
-                    </tr>
-
-
-                    <!-- WHY THIS GUIDE IS DIFFERENT -->
-                    <tr>
-                        <td class="container-main-td top" style="padding:0 32px 20px">
                             <h2
                                 style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 10px">
                                 Where to start</h2>
@@ -300,18 +328,17 @@
                                 needs to happen before you buy, and bring the right partners into the conversation from
                                 there.
                             </p>
+
                         </td>
                     </tr>
 
                     <tr>
                         <td class="td-padding" style="padding:0 32px 30px">
-
                             <p style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0">Speak
                                 soon,
                             </p>
-                            <p
-                                style="font-size:14px;line-height:21px;font-weight: 600;color: #002D72;margin:0;text-transform: uppercase;">
-                                Arabon
+                            <p style="font-size:14px;line-height:21px;font-weight: 600;color: #002D72;margin:0;">
+                                Arabon Accountants
                             </p>
                         </td>
                     </tr>
@@ -322,13 +349,12 @@
                             <table width="100%">
                                 <tr>
                                     <td class="footer-td-2" style="vertical-align:middle; padding: 0;">
-                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo.png"
-                                            width="138" alt="Arabon Accountants">
+                                        <img src="images/img_footer_logo.png" width="138" alt="Arabon Accountants">
                                     </td>
                                     <td class="footer-td footer-align-right" align="right"
                                         style="vertical-align:middle;padding: 0;">
                                         <a class="btn"
-                                            href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/SMSF.pdf">
+                                            href="https://bookings.cloud.microsoft/book/ArabonAccountants1@arabon.com.au/?ismsaljsauthenabled">
                                             Book an Appointment
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
                                                 alt="Button Icon" width="14px"
@@ -347,16 +373,15 @@
                                         <table>
                                             <tr>
                                                 <td style="padding:0 14px 0 0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-1.png"
-                                                        width="36" alt="Registered Tax Agent">
+                                                    <img src="images/img_footer_logo-1.png" width="36"
+                                                        alt="Registered Tax Agent">
                                                 </td>
                                                 <td style="padding:0 14px 0 0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-2.png"
-                                                        width="36" alt="Xero">
+                                                    <img src="images/img_footer_logo-2.png" width="36" alt="Xero">
                                                 </td>
                                                 <td style="padding:0">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_footer_logo-3.png"
-                                                        width="29" height="36" alt="Platinum Champion Partner">
+                                                    <img src="images/img_footer_logo-3.png" width="29" height="36"
+                                                        alt="Platinum Champion Partner">
                                                 </td>
                                             </tr>
                                         </table>
@@ -364,7 +389,7 @@
                                             style="font-size:10px; line-height: 15px; font-weight: 400; color:#ffffff;margin:12px 0 41px">
                                             Registered Tax Agent (25620662)</p>
 
-                                        <!-- Social icons (inline SVG, no external assets needed) -->
+                                        <!-- Social icons -->
                                         <table>
                                             <tr>
                                                 <td style="padding:0 22px 0 0">
@@ -412,14 +437,14 @@
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0 0 16px">
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_location.png"
-                                                alt="SMS" width="16"
+                                                alt="Location" width="16"
                                                 style="margin-right: 8px; vertical-align: middle; display: inline-block;">
                                             Level 1, 655 Sherwood Road, Sherwood QLD 4075
                                         </p>
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color: #FFFFFF; margin:0">
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_location.png"
-                                                alt="SMS" width="16"
+                                                alt="Location" width="16"
                                                 style="margin-right: 8px; vertical-align: middle; display: inline-block;">
                                             14/5 Markeri St, Mermaid Beach QLD 4218
                                         </p>
