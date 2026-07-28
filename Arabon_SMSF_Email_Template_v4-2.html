@@ -26,10 +26,9 @@
             background: #009CDD;
             color: #FFFFFF !important;
             text-decoration: none;
-            padding: 12px 32px;
+            padding: 12px 24px;
             border-radius: 100px;
             display: inline-block;
-            font-weight: bold;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
@@ -93,30 +92,35 @@
         @media(max-width:425px) {
 
             .hero-main {
-                padding: 20px !important;
-            }
-
-            .feature-main {
-                display: inline-flex !important;
-                flex-direction: column;
+                padding: 32px 20px !important;
             }
 
             .feature {
-                margin-left: 0;
-                margin-right: 0;
-                margin-top: 12px;
-                margin-bottom: 12px;
-                border: 1px solid #E8E8E8;
+                display: block;
+                width: 100% !important;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 0;
+                padding-right: 0;
+                border-right: none;
+                border-bottom: 1px solid #E8E8E8;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
             }
 
             .feature:first-child {
-                margin-top: 0;
-                margin-bottom: 0;
+                padding-top: 0;
+                padding-bottom: 16px;
+                padding-right: 0;
+                padding-left: 0;
             }
 
             .feature:last-child {
-                margin-top: 0;
-                margin-bottom: 0;
+                border: none;
+                padding-right: 0;
+                padding-left: 0;
+                padding-bottom: 0;
+                padding-top: 16px;
             }
 
             .container-main-td {
@@ -179,74 +183,72 @@
     <table width="100%" bgcolor="#eef1f6" style="position: relative;">
         <tr>
             <td align="center" style="padding:0">
-                <table class="container" width="100%;" style="overflow: hidden;">
+                <table class="container" width="100%" style="overflow: hidden; background:#FFFFFF;">
 
-                    <!-- HERO BANNER: logo + headline/subtitle + illustration on light blue background -->
                     <tr>
-                        <td class="hero-main" style="background:#F1FBFF;padding:32px 0 32px 32px; position: relative;">
-                            <div class="liner-circle"
-                                style="position: absolute; top: -40px; right: -56px; width: 111.81px; height: 111.81px; z-index: 999;">
-                                <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_email_template_1_Ellipse.png"
-                                    width="118" alt="Arabon Accountants">
+                        <td style="background:#FFFFFF;padding:18.5px;text-align:center;">
+                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
+                                width="118" alt="Arabon Accountants" style="display:inline-block;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hero-main"
+                            style="background:#F1FBFF url('https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_2-main.jpg') center center / cover no-repeat;padding:48px 32px 46px; position: relative;">
+                            <div
+                                style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,45,114,0.86) 0%, rgba(0,45,114,0.72) 38%, rgba(0,45,114,0.10) 100%);">
                             </div>
-                            <table width="100%">
+                            <table width="100%" style="position:relative; z-index:2;">
                                 <tr>
-                                    <td>
-                                        <table width="100%">
-                                            <tr>
-                                                <td class="hero-copy">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
-                                                        width="118" alt="Arabon Accountants">
-                                                    <h1
-                                                        style="color:#002D72;font-size:22px;line-height:29px;margin:24px 0 12px;font-weight:bold">
-                                                        The SMSF Property Rules Just Changed. Your Guide, Plus What it
-                                                        Means
-                                                    </h1>
-                                                    <p
-                                                        style="font-size:12px;line-height:18px;color:#202020;margin:0;font-weight:400">
-                                                        Before you read it, here's the one change that affects
-                                                        almost everyone.
-                                                    </p>
-                                                </td>
-                                                <td class="hero-art" style="vertical-align: bottom;">
-                                                    <!-- Illustration placeholder — replace src with your hosted illustration graphic -->
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_ab_account_email_1_illution.png"
-                                                        width="100%" style="max-width:100%;display:inline-block"
-                                                        alt="SMSF property illustration">
-                                                </td>
-                                            </tr>
-                                        </table>
+                                    <td style="width:78%; vertical-align:top;">
+                                        <h1
+                                            style="color:#FFFFFF;font-size:24px;line-height:31px;margin:0 0 12px;font-weight:bold; max-width:356px;">
+                                            Where most SMSF property purchases actually go wrong
+                                        </h1>
+                                        <p
+                                            style="font-size:14px;line-height:21px;color:#FFFFFF;margin:0 0 24px;font-weight:400; max-width:330px;">
+                                            It's rarely the property that causes problems. It's what happens before it.
+                                        </p>
+                                        <a class="btn"
+                                            href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/SMSF.pdf">
+                                            Download Your Guide Here
+                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
+                                                alt="Button Icon" width="14"
+                                                style="margin-left: 20px; vertical-align: middle; display: inline-block;">
+                                        </a>
                                     </td>
+                                    <td class="hero-art" style="vertical-align: bottom; font-size:0; line-height:0;">&nbsp;</td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
 
-                    <!-- BODY -->
                     <tr>
                         <td class="container-main-td" style="padding:32px 32px 0">
 
                             <p style="font-size:14px;line-height:21px;color:#202020;margin:0 0 12px; font-weight: 400;">
-                                Hi <strong style="color: #002D72;">[First Name]</strong>,</p>
+                                Hi <strong style="color: #002D72;">[First Name]</strong>,
+                            </p>
 
-                            <p style="font-size:14px;line-height:21px;color: #202020;margin:0 0 12px">
-                                Your copy of <a
-                                    href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/SMSF.pdf"
-                                    style="color:#002D72;text-decoration:none;font-weight:bold">How to Buy Property
-                                    Through Your SMSF</a> is ready.
+                            <p
+                                style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 12px">
+                                Most SMSF property purchases that go wrong don't fail because of the property. They fail
+                                because of what wasn't in place before the offer was made.
+                            </p>
+
+                            <p
+                                style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 12px">
+                                Here's the part that catches people out.
                             </p>
 
                             <p class="desc-margin"
-                                style="font-size:14px;line-height:21px;color:#202020;margin:0 0 32px">
-                                Here's why the timing matters. New legislation has just closed off one of the ways SMSFs
-                                could fund a property purchase, and if you'd assumed the old rules still applied, this
-                                guide will save you from building a plan around something that's no longer possible.
+                                style="font-size:14px;line-height:21px; font-weight: bold; color:#002D72;margin:0 0 32px">
+                                Borrowing through super doesn't work like a normal mortgage
                             </p>
 
                         </td>
                     </tr>
 
-                    <!-- "IN THE NEXT FIVE MINUTES" callout box -->
                     <tr>
                         <td class="td-padding top" style="background:#F1FBFF; padding: 32px 32px 32px;">
                             <table width="100%">
@@ -254,8 +256,9 @@
                                     <td style="padding:0 0 20px">
                                         <h2
                                             style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 20px">
-                                            In the next five
-                                            minutes, you'll know:</h2>
+                                            Your SMSF can't just take out a loan. The one route available is a Limited
+                                            Recourse Borrowing Arrangement, or LRBA:
+                                        </h2>
 
                                         <table class="check-row" width="100%">
                                             <tr>
@@ -265,7 +268,8 @@
                                                 </td>
                                                 <td
                                                     style="font-size:14px;line-height:21px; font-weight: 400; color:#202020; padding-left: 12px;">
-                                                    Which properties you can still buy with cash, no restrictions at all
+                                                    A separate holding trust is set up to hold legal title to the
+                                                    property while the loan is outstanding
                                                 </td>
                                             </tr>
                                             <tr>
@@ -275,16 +279,8 @@
                                                 </td>
                                                 <td
                                                     style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;padding-left: 12px;">
-                                                    Which one is now completely off the table for borrowing</td>
-                                            </tr>
-                                            <tr>
-                                                <td width="22" style="color:#009CDD;font-weight:bold;font-size:15px">
-                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_check_mark.png"
-                                                        width="20" alt="Arabon Accountants CheckMark Icon">
-                                                </td>
-                                                <td
-                                                    style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;padding-left: 12px;">
-                                                    Which door is still wide open, and why most people don't realise it
+                                                    Your SMSF trustee borrows the funds and becomes the beneficial owner,
+                                                    collecting the rent and any capital growth
                                                 </td>
                                             </tr>
                                             <tr>
@@ -294,7 +290,19 @@
                                                 </td>
                                                 <td
                                                     style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;padding-left: 12px;">
-                                                    What has to be in place before your fund can act on any of it</td>
+                                                    If the loan defaults, the lender's claim is limited to that one
+                                                    property, not the rest of your fund
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="22" style="color:#009CDD;font-weight:bold;font-size:15px">
+                                                    <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_check_mark.png"
+                                                        width="20" alt="Arabon Accountants CheckMark Icon">
+                                                </td>
+                                                <td
+                                                    style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;padding-left: 12px;">
+                                                    Once the loan is repaid, legal title transfers to the SMSF
+                                                </td>
                                             </tr>
                                         </table>
                                     </td>
@@ -303,8 +311,9 @@
                                     <td>
                                         <p
                                             style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;margin:0">
-                                            Most trustees only find out what's changed when a purchase falls over
-                                            partway through. Reading this now means you won't be one of them.
+                                            Straightforward in theory. In practice, the holding trust needs to exist
+                                            before a property goes under contract, not after, and this is the single
+                                            most common step people miss.
                                         </p>
                                     </td>
                                 </tr>
@@ -312,68 +321,42 @@
                         </td>
                     </tr>
 
-                    <!-- HERO IMAGE (meeting photo) -->
                     <tr>
                         <td class="td-padding" style="padding:32px 32px 0">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t-main.jpg"
-                                width="100%" style="display:block;" alt="Arabon team meeting">
+                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t_2-main.jpg"
+                                width="100%" style="display:block;border-radius:4px;" alt="Arabon team meeting">
                         </td>
                     </tr>
 
-                    <!-- WHY THIS GUIDE IS DIFFERENT -->
                     <tr>
-                        <td class="container-main-td" style="padding:32px 32px 30px">
+                        <td class="container-main-td" style="padding:32px 32px 24px">
                             <h2
                                 style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 10px">
-                                Why this guide is different</h2>
+                                What's changed, and what hasn't
+                            </h2>
                             <p style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;margin:0">
-                                It wasn't written to hand you information and leave you to figure out the rest. Arabon
-                                Accountants are Queensland's SMSF specialists, and property purchases through super
-                                almost always need more than one set of hands. So we work alongside a partner network
-                                built specifically for this:
+                                New residential LRBAs are no longer available. If you were planning to gear into a
+                                house or unit through your fund, that path has closed. What's still fully open is
+                                borrowing for business real property, commercial premises used wholly and exclusively in
+                                a business. If your fund is buying a house, it's cash only now. If it's buying
+                                commercial, borrowing is still on the table.
                             </p>
                         </td>
                     </tr>
 
-                    <!-- PARTNER LOGOS ROW -->
                     <tr>
-                        <td class="td-padding" style="padding:0 32px 30px">
-                            <table width="100%">
-                                <tr class="feature-main" style="display: inline-flex;">
-                                    <td class="feature">
-                                        <span
-                                            style="height: 74px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
-                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_insight_icon.png"
-                                                width="130" style="display:block;" alt="Insight Property Specialist">
-                                        </span>
-                                        <p
-                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
-                                            buyers agents who source the right investment property</p>
-                                    </td>
-                                    <td class="feature">
-                                        <span
-                                            style="height: 74px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
-                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_panoptic_icon.png"
-                                                width="136" style="display:block;" alt="Panoptic Wealth Management">
-                                        </span>
-                                        <p
-                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
-                                            mortgage brokers who specialise in SMSF lending</p>
-                                    </td>
-                                    <td class="feature">
-                                        <span
-                                            style="height: 74px; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
-                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_write_finance_icon.png"
-                                                width="137" style="display:block;" alt="Write Finance">
-                                        </span>
-                                        <p
-                                            style="font-size:14px;line-height:21px; font-weight: 400; color:#6B6C6F;margin:0; padding: 12px 11px; height: 100%; background-color: #F6F9FA;">
-                                            financial advisors who make sure the strategy fits your broader
-                                            financial
-                                            plan</p>
-                                    </td>
-                                </tr>
-                            </table>
+                        <td class="container-main-td" style="padding:0 32px 24px">
+                            <h2
+                                style="color:#002D72;font-size:18px; line-height: 27px; font-weight: 600; margin:0 0 10px">
+                                Why the finance side is where things stall
+                            </h2>
+                            <p style="font-size:14px;line-height:21px; font-weight: 400; color:#202020;margin:0">
+                                SMSF lending is a specialist category. Fewer lenders offer it, the criteria are
+                                tighter, and the loan has to be structured to match the LRBA exactly from day one. This
+                                is where <strong style="color: #002D72;">Write Finance</strong> earns their place in
+                                this process. They work directly with Arabon, so the fund structure and the loan are
+                                built together, not patched together after something doesn't line up.
+                            </p>
                         </td>
                     </tr>
 
@@ -381,8 +364,9 @@
                         <td class="td-padding" style="padding:0 32px 30px">
                             <p
                                 style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0 0 20px">
-                                One phone call gets you all four, rather than four separate people to find, brief,
-                                and chase yourself.
+                                And because this decision affects more than just one asset, <strong
+                                    style="color: #002D72;">Panoptic Wealth Management</strong> looks at how the
+                                purchase sits inside your broader financial plan before you commit to anything.
                             </p>
 
                             <p style="font-size:14px;line-height:21px; font-weight: 400; color: #202020;margin:0">Speak
@@ -394,22 +378,8 @@
                         </td>
                     </tr>
 
-                    <!-- DOWNLOAD BUTTON -->
                     <tr>
-                        <td class="td-padding" style="padding:0 32px 32px;">
-                            <a class="btn" target="_blank"
-                                href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/SMSF-guide.pdf">
-                                Download Your Guide Here
-                                <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
-                                    alt="Button Icon" width="14px"
-                                    style="margin-left: 20px; vertical-align: middle; display: inline-block;">
-                            </a>
-                        </td>
-                    </tr>
-
-                    <!-- FOOTER -->
-                    <tr>
-                        <td bgcolor="#002D72" class="footer-td" style="padding:32px 32px">
+                        <td bgcolor="#002D72" class="footer-td" style="padding:34px 32px 28px">
                             <table width="100%">
                                 <tr>
                                     <td class="footer-td-2" style="vertical-align:middle; padding: 0;">
@@ -418,11 +388,11 @@
                                     </td>
                                     <td class="footer-td footer-align-right" align="right"
                                         style="vertical-align:middle;padding: 0;">
-                                        <a class="btn"
-                                            href="https://bookings.cloud.microsoft/book/ArabonAccountants1@arabon.com.au/?ismsaljsauthenabled">
+                                        <a href="https://bookings.cloud.microsoft/book/ArabonAccountants1@arabon.com.au/?ismsaljsauthenabled"
+                                            style="background:#12A9E8;color:#FFFFFF !important;text-decoration:none;padding:14px 28px;border-radius:100px;display:inline-block;font-size:16px;line-height:24px;font-weight:400;">
                                             Book an Appointment
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
-                                                alt="Button Icon" width="14px"
+                                                alt="Button Icon" width="14"
                                                 style="margin-left: 20px; vertical-align: middle; display: inline-block;">
                                         </a>
                                     </td>
@@ -433,7 +403,6 @@
 
                             <table width="100%">
                                 <tr>
-                                    <!-- Badges / registration -->
                                     <td class="footer-td-2" width="40%" style="vertical-align:top">
                                         <table>
                                             <tr>
@@ -452,36 +421,35 @@
                                             </tr>
                                         </table>
                                         <p
-                                            style="font-size:10px; line-height: 15px; font-weight: 400; color:#ffffff;margin:12px 0 41px">
-                                            Registered Tax Agent (25620662)</p>
+                                            style="font-size:10px; line-height: 15px; font-weight: 400; color:#ffffff;margin:12px 0 34px">
+                                            Registered Tax Agent (25620662)
+                                        </p>
 
-                                        <!-- Social icons -->
                                         <table>
                                             <tr>
                                                 <td style="padding:0 22px 0 0">
-                                                    <a href="https://www.facebook.com/arabongroup/" target="_blank">
+                                                    <a href="https://www.facebook.com/arabongroup/" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_facebook.png"
                                                             alt="Facebook" width="9">
                                                     </a>
                                                 </td>
                                                 <td style="padding:0 22px 0 0">
-                                                    <a href="https://www.instagram.com/arabongroup/" target="_blank">
+                                                    <a href="https://www.instagram.com/arabongroup/" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_instagram.png"
-                                                            alt="instagram" width="16">
+                                                            alt="Instagram" width="16">
                                                     </a>
                                                 </td>
                                                 <td style="padding:0">
-                                                    <a href="https://www.linkedin.com/company/arabon/" target="_blank">
+                                                    <a href="https://www.linkedin.com/company/arabon/" target="_blank" rel="noopener noreferrer">
                                                         <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_linkedin.png"
-                                                            alt="Linkedin" width="17">
+                                                            alt="LinkedIn" width="17">
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
 
-                                    <!-- Contact / address -->
-                                    <td class="footer-td-2" width="60%" align="left" style="vertical-align:top">
+                                    <td class="footer-td-2" width="60%" align="left" style="vertical-align:top; padding-top:6px;">
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0 0 16px">
                                             <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_call-calling.png"
@@ -489,7 +457,8 @@
                                                 style="margin-right: 8px; vertical-align: middle; display: inline-block;">
                                             <a href="tel:1300272266"
                                                 style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0;text-decoration: none;">
-                                                1300 ARABON </a>
+                                                1300 ARABON
+                                            </a>
                                         </p>
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0 0 16px">
@@ -498,7 +467,8 @@
                                                 <img src="https://arabon-smsf-email-template-v2.vercel.app/images/icn_sms.png"
                                                     alt="SMS" width="16"
                                                     style="margin-right: 8px; vertical-align: middle; display: inline-block;">
-                                                arabon@arabon.com.au</a>
+                                                arabon@arabon.com.au
+                                            </a>
                                         </p>
                                         <p
                                             style="font-size:12px; line-height: 18px; font-weight: 300; color:#ffffff;margin:0 0 16px">
