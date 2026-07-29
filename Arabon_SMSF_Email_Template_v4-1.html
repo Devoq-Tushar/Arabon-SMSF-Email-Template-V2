@@ -26,11 +26,24 @@
             background: #009CDD;
             color: #FFFFFF !important;
             text-decoration: none;
-            padding: 12px 24px;
+            padding: 9px 16px;
             border-radius: 100px;
             display: inline-block;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF !important;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 100px;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 18px;
             font-weight: 400;
         }
 
@@ -152,6 +165,42 @@
                 padding-top: 20px !important;
                 text-align: center !important;
             }
+
+            .header-td {
+                display: block !important;
+                text-align: center !important;
+                padding-bottom: 0 !important;
+            }
+
+            .header-td-2 {
+                display: block !important;
+                text-align: center !important;
+                padding-top: 12px !important;
+            }
+
+            .header-contact-table {
+                margin: 0 auto !important;
+                float: none !important;
+            }
+
+            .hero-btn-table {
+                width: 100% !important;
+            }
+
+            .hero-btn-table tr {
+                display: block !important;
+            }
+
+            .hero-btn-td {
+                display: block !important;
+                padding: 0 0 12px 0 !important;
+            }
+
+            .hero-btn-td .btn,
+            .hero-btn-td .btn-outline {
+                display: block !important;
+                text-align: center !important;
+            }
         }
     </style>
 </head>
@@ -163,19 +212,79 @@
                 <table class="container" width="100%" style="overflow: hidden; background:#FFFFFF;">
 
                     <tr>
-                        <td style="background:#FFFFFF;padding:18.5px;text-align:center;">
-                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_emial_t_icon.png"
-                                width="118" alt="Arabon Accountants" style="display:inline-block;">
+                        <td style="background:#FFFFFF;padding:20px 32px;border-bottom:1px solid #E8E8E8;">
+                            <table width="100%">
+                                <tr>
+                                    <td class="header-td" style="vertical-align:middle;">
+                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/aa-logo-logo-full-colour-rgb1.jpg"
+                                            width="118" alt="Arabon Accountants" style="display:inline-block;">
+                                    </td>
+                                    <td class="header-td-2" align="right" style="vertical-align:middle;">
+                                        <table class="header-contact-table" style="margin-left:auto;">
+                                            <tr>
+                                                <td
+                                                    style="vertical-align:middle;padding:0 20px 0 0;white-space:nowrap;">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="padding:0 0 4px; text-align: right;">
+                                                                <a href="tel:1300272266"
+                                                                    style="font-size:12px;line-height:18px;font-weight:400;color:#202020;text-decoration:none;">
+                                                                    1300 ARABON
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding:0; text-align: right;">
+                                                                <a href="mailto:arabon@arabon.com.au"
+                                                                    style="font-size:12px;line-height:18px;font-weight:400;color:#202020;text-decoration:none;">
+                                                                    arabon@arabon.com.au
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="vertical-align:middle;white-space:nowrap;">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="padding:0 12px 0 0;vertical-align:middle;">
+                                                                <a href="https://www.facebook.com/arabongroup/"
+                                                                    target="_blank" rel="noopener noreferrer">
+                                                                    <img src="images/icn_facebook_nav.png"
+                                                                        alt="Facebook" width="16"
+                                                                        style="display:block;">
+                                                                </a>
+                                                            </td>
+                                                            <td style="padding:0 12px 0 0;vertical-align:middle;">
+                                                                <a href="https://www.instagram.com/arabongroup/"
+                                                                    target="_blank" rel="noopener noreferrer">
+                                                                    <img src="images/icn_instagram_nav.png"
+                                                                        alt="Facebook" width="16"
+                                                                        style="display:block;">
+                                                                </a>
+                                                            </td>
+                                                            <td style="vertical-align:middle;">
+                                                                <a href="https://www.linkedin.com/company/arabon/"
+                                                                    target="_blank" rel="noopener noreferrer">
+                                                                    <img src="images/icn_linkedin_nav.png"
+                                                                        alt="Facebook" width="16"
+                                                                        style="display:block;">
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
                     <tr>
-                        <td class="hero-main"
-                            style="background:#F1FBFF url('https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t-main.jpg') center center / cover no-repeat;padding:48px 32px 46px; position: relative;">
-                            <div
-                                style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,45,114,0.86) 0%, rgba(0,45,114,0.72) 38%, rgba(0,45,114,0.10) 100%);">
-                            </div>
-                            <table width="100%" style="position:relative; z-index:2;">
+                        <td class="hero-main" bgcolor="#002D72"
+                            style="background-color:#002D72;background-image:linear-gradient(90deg, rgba(0,45,114,0.86) 0%, rgba(0,45,114,0.72) 38%, rgba(0,45,114,0.10) 100%), url('https://arabon-smsf-email-template-v2.vercel.app/images/img_aba_email_t-hero.jpg');background-position:center center;background-size:cover;background-repeat:no-repeat;padding:48px 32px;">
+                            <table width="100%">
                                 <tr>
                                     <td style="width:100%; vertical-align:top;">
                                         <h1
@@ -186,13 +295,28 @@
                                             style="font-size:14px;line-height:21px;color:#FFFFFF;margin:0 0 24px;font-weight:400; max-width:556px;">
                                             Before you read it, here's the one change that affects almost everyone.
                                         </p>
-                                        <a class="btn"
-                                            href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/How-to-Buy-Property-Through-Your-SMSF-What-You-Need-to-Know-Before-You-Start-1.pdf">
-                                            Download Your Guide Here
-                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
-                                                alt="Button Icon" width="14"
-                                                style="margin-left: 20px; vertical-align: middle; display: inline-block;">
-                                        </a>
+                                        <table class="hero-btn-table">
+                                            <tr>
+                                                <td class="hero-btn-td" style="padding:0 16px 0 0;">
+                                                    <a class="btn"
+                                                        href="https://arabonaccoustg.wpenginepowered.com/wp-content/uploads/2026/07/How-to-Buy-Property-Through-Your-SMSF-What-You-Need-to-Know-Before-You-Start-1.pdf">
+                                                        Download Your Guide Here
+                                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
+                                                            alt="Button Icon" width="12"
+                                                            style="margin-left: 20px; vertical-align: middle; display: inline-block;">
+                                                    </a>
+                                                </td>
+                                                <td class="hero-btn-td" style="padding:0 0 0 0;">
+                                                    <a class="btn-outline"
+                                                        href="https://bookings.cloud.microsoft/book/ArabonAccountants1@arabon.com.au/?ismsaljsauthenabled">
+                                                        Book an Appointment
+                                                        <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_btn_icon.png"
+                                                            alt="Button Icon" width="12"
+                                                            style="margin-left: 20px; vertical-align: middle; display: inline-block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                     <td class="hero-art" style="vertical-align: bottom; font-size:0; line-height:0;">
                                         &nbsp;</td>
@@ -322,7 +446,7 @@
                                                 width="130" style="display:block;" alt="Insight Property Specialists">
                                         </span>
                                         <p
-                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;height:100%;background-color:#F6F9FA;">
+                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;background-color:#F6F9FA;">
                                             buyers agents who source the right investment property
                                         </p>
                                     </td>
@@ -330,11 +454,11 @@
                                     <td class="feature">
                                         <span
                                             style="height:74px; display:flex; justify-content:center; align-items:center; flex-shrink:0;">
-                                            <img src="images/img_wealth_lab.png" width="65" style="display:block;"
-                                                alt="The Wealth Lab">
+                                            <img src="https://arabon-smsf-email-template-v2.vercel.app/images/img_wealth_lab.png"
+                                                width="65" style="display:block;" alt="The Wealth Lab">
                                         </span>
                                         <p
-                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;height:100%;background-color:#F6F9FA;">
+                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;background-color:#F6F9FA;">
                                             who provide expert financial advice with innovative strategies to help you
                                             achieve your goals.
                                         </p>
@@ -347,7 +471,7 @@
                                                 width="137" style="display:block;" alt="Write Finance">
                                         </span>
                                         <p
-                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;height:100%;background-color:#F6F9FA;">
+                                            style="font-size:14px;line-height:21px;font-weight:400;color:#6B6C6F;margin:0;padding:12px 11px;background-color:#F6F9FA;">
                                             financial advisors who make sure the strategy fits your broader financial
                                             plan
                                         </p>
@@ -359,6 +483,32 @@
 
                     <tr>
                         <td class="td-padding" style="padding:0 32px 30px">
+                            <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 16px">
+                                Arabon Accountants are Queensland's SMSF specialists, handling fund setup, accounting,
+                                and compliance. But a property purchase through super also needs the right property, the
+                                right finance, and a strategy that fits your bigger picture. That's why Arabon has built
+                                a one-stop shop working alongside a partner network built specifically for this:
+                            </p>
+
+                            <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 12px">
+                                Insight Property Specialist, Buyers agents who source the right investment property
+                            </p>
+
+                            <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 12px">
+                                Write Finance, Mortgage brokers who specialise in SMSF lending
+                            </p>
+
+                            <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 16px">
+                                The Wealth Lab, who provide expert financial advice with innovative strategies to help
+                                you achieve your goals.
+                            </p>
+
+                            <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 16px">
+                                If you'd like the full team working on this with you, from the fund itself through to
+                                the property, the finance, and the strategy, a discovery call with Arabon Accountants is
+                                the natural next step.
+                            </p>
+
                             <p style="font-size:14px;line-height:21px;font-weight:400;color:#202020;margin:0 0 20px">
                                 One phone call gets you all four, rather than four separate people to find, brief, and
                                 chase yourself.
